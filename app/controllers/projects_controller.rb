@@ -7,6 +7,8 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    # @project = Project.new(params.require(:project).permit(:title, :text))
+    # @project.save
     render 'new'
   end
 
