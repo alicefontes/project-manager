@@ -7,9 +7,10 @@ body
   h1 The Project Manager
   h2 Adicionar um novo projeto
 
-  form action=added_path method="POST"
-    input class="input" type="text" placeholder="Nome do projeto" id="name_id" name="name" value=@name
-    br
-    input class="input" type="text" placeholder="Descrição" id="description_id" name="description" value=@description
-    br
-    input type="submit" class="btn" value="Salvar!"
+  div class="text-field"
+    form action=added_path method="POST"
+      input class="input" type="text" placeholder="Nome do projeto" id="name_id" name="name" value=@name
+      br
+      input class="input" type="text" placeholder="Descrição" id="description_id" name="description" value=@description
+      br
+      input type="submit" class="btn" value="Salvar!"

@@ -1,2 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "reset";
+
+body {
+  font: 100% Avenir;
+  font-weight: medium;
+  background-color: #113C51;
+}
+
+h1 {
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+h2 {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-size: 20px;
+  color: #6E91A1;
+}
+
+.initial-projects {
+}
+
+.initial-login {
+}
+
+.text-field {
+  text-align: center;
+}
