@@ -19,4 +19,8 @@ class ProjectsController < ApplicationController
   def register
     render 'register'
   end
+
+  def added
+    render 'added'
+  end
 end
