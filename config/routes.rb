@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :projects
 
-  # root 'projects#index'
+  root 'projects#initial'
 
   # get '/list', to: 'projects#list', as: :list
   # get '/new', to: 'projects#new', as: :new
