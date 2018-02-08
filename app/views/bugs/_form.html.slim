@@ -1,0 +1,8 @@
+= semantic_form_for @bug do |f|
+  = f.inputs do
+    = f.input :title
+    = f.input :projectname
+    = f.input :description
+
+  = f.actions do
+    = f.action :submit, as: :input

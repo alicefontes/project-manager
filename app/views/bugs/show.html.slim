@@ -1,0 +1,19 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @bug.title
+p
+  strong projectname:
+  = @bug.projectname
+p
+  strong Description:
+  = @bug.description
+
+=> link_to 'Edit', edit_bug_path(@bug)
+'|
+=< link_to 'Back to bugs', bugs_path
+br
+= link_to 'Back to projects', projects_path
+br
+= link_to 'Back to home', root_path
