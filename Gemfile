@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim'
 gem 'slim-rails'
 gem 'jquery-rails'
-
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
