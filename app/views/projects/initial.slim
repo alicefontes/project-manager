@@ -10,15 +10,17 @@ body
 
 
   div class="container-fluid"
-    div class="link"
-      = link_to 'Register New Project', new_project_path
-      br
-      = link_to 'Register New User', new_user_path
-      br
-      = link_to 'See All Projects', projects_path
-      br
-      = link_to 'See All Users', users_path
-      br
-      = link_to 'Report a Bug', new_bug_path
-      br
-      = link_to 'See All Bugs', bugs_path
+    div class="table-home" align="center" style="margin: 0px auto;"
+      table
+        tr
+          td = link_to 'Register new project', new_project_path
+        tr
+          td = link_to 'See all projects', projects_path
+        tr
+          td = link_to 'Register new user', new_user_path
+        tr
+          td = link_to 'See all users', users_path
+        tr
+          td = link_to 'Report a bug', new_bug_path
+        tr
+          td = link_to 'See all bugs', bugs_path

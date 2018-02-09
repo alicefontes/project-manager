@@ -1,32 +1,32 @@
-h1 The Project Manager
-h2 Listing projects
+div class="container-fluid"
+  h1 The Project Manager
+  h2 Listing projects
 
-table
-  thead
-    tr
-      th Name
-      th Description
-      th
-      th
-      th
-
-  tbody
-    - @projects.each do |project|
+  table
+    thead
       tr
-        td = project.name
-        td = project.description
-        td = link_to 'Show', project
-        td = link_to 'Edit', edit_project_path(project)
-        td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
+        th Name
+        th Description
+        th
+        th
+        th
 
-br
-
-div class="link"
-  = link_to 'New Project', new_project_path
+    tbody
+      - @projects.each do |project|
+        tr
+          td = project.name
+          td = project.description
+          td = link_to 'Show', project
+          td = link_to 'Edit', edit_project_path(project)
+          td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
 
   br
-  = link_to 'Back to home', root_path
-  br
-  = link_to 'Report a bug', new_bug_path
-  br
-  = link_to 'See bugs', bugs_path
+
+  div class="link"
+    = link_to 'New Project', new_project_path
+    br
+    = link_to 'Back to home', root_path
+    br
+    = link_to 'Report a bug', new_bug_path
+    br
+    = link_to 'See bugs', bugs_path

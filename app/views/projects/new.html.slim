@@ -1,8 +1,11 @@
-h1 The Project Manager
-h2 New project
+div class="container-fluid"
+  h1 The Project Manager
+  h2 New project
 
-== render 'form'
+  div class="form"
+    == render 'form'
 
-= link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
+  div class="link"
+    = link_to 'Back to projects', projects_path
+    br
+    = link_to 'Back to home', root_path

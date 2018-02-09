@@ -1,18 +1,21 @@
-h1 The Project Manager
+div class="container-fluid"
+  h1 The Project Manager
 
-p#notice = notice
+  div class="show"
+    p#notice = notice
 
-p
-  strong Name:
-  = @project.name
-p
-  strong Description:
-  = @project.description
+    p
+      strong Name:
+      = @project.name
+    p
+      strong Description:
+      = @project.description
 
-=> link_to 'Edit', edit_project_path(@project)
-'|
-=< link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
-br
-= link_to 'Report a bug', new_bug_path
+  div class="link"
+    => link_to 'Edit', edit_project_path(@project)
+    br
+    =< link_to 'Back to projects', projects_path
+    br
+    = link_to 'Back to home', root_path
+    br
+    = link_to 'Report a bug', new_bug_path

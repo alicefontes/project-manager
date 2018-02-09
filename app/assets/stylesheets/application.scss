@@ -56,9 +56,27 @@ table {
 }
 
 .link {
-  font-size: 24px;
+  font-size: 18px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .text-field {
   text-align: center;
+}
+
+.form {
+
+}
+
+.show {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #6E92A1;
+  font-size: 22px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
