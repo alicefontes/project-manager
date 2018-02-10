@@ -66,14 +66,26 @@ table {
 }
 
 .form {
-
+  font-size: 22px;
+  color: black;
 }
 
 .show {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #6E92A1;
+  font-size: 20px;
+}
+
+.notice {
+  padding-top: 20px;
+  color: #6E92A1;
+  text-align: center;
   font-size: 22px;
+}
+
+.labels {
+  color: white;
 }
 
 a:hover, a:visited, a:link, a:active

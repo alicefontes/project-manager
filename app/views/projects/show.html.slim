@@ -1,21 +1,25 @@
 div class="container-fluid"
   h1 The Project Manager
 
-  div class="show"
+  div class="notice"
     p#notice = notice
 
+  div class="show"
     p
-      strong Name:
+      div class="labels"
+        strong Name:
       = @project.name
     p
-      strong Description:
+      div class="labels"
+        strong Description:
       = @project.description
 
   div class="link"
     => link_to 'Edit', edit_project_path(@project)
     br
+    = link_to 'Report a bug', new_bug_path
+    br
     =< link_to 'Back to projects', projects_path
     br
-    = link_to 'Back to home', root_path
     br
-    = link_to 'Report a bug', new_bug_path
+    = link_to 'Back to home', root_path

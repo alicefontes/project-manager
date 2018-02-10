@@ -7,9 +7,9 @@ div class="container-fluid"
       tr
         th Name
         th Description
-        th
-        th
-        th
+        th 👀
+        th 🖌
+        th 💣
 
     tbody
       - @projects.each do |project|
@@ -25,8 +25,9 @@ div class="container-fluid"
   div class="link"
     = link_to 'New Project', new_project_path
     br
-    = link_to 'Back to home', root_path
-    br
     = link_to 'Report a bug', new_bug_path
     br
     = link_to 'See bugs', bugs_path
+    br
+    br
+    = link_to 'Back to home', root_path
