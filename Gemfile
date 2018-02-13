@@ -42,6 +42,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'jquery-rails'
 gem 'devise'
+gem 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
