@@ -1,9 +1,15 @@
-h1 New bug
+div class="container-fluid"
+  h1 The Project Manager
+  h2 New bug
 
-== render 'form'
+  div class="form"
+  == render 'form'
 
-= link_to 'Back to bugs', bugs_path
-br
-= link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
+  br
+  div class="link"
+    = link_to 'Back to bugs', bugs_path
+    br
+    = link_to 'Back to projects', projects_path
+    br
+    br
+    = link_to 'Back to home', root_path

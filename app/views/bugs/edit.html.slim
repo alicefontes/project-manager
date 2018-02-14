@@ -1,11 +1,16 @@
-h1 Editing bug
+div class="container-fluid"
+  h1 The Project Manager
+  h2 Editing bug
 
-== render 'form'
+  div class="form"
+    == render 'form'
 
-=> link_to 'Show', @bug
-'|
-=< link_to 'Back to bugs', bugs_path
-br
-= link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
+  div class="link"
+    => link_to 'Show', @bug
+    br
+    = link_to 'Back to bugs', bugs_path
+    br
+    =< link_to 'Back to projects', projects_path
+    br
+    br
+    = link_to 'Back to home', root_path

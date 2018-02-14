@@ -1,19 +1,31 @@
-p#notice = notice
 
-p
-  strong Title:
-  = @bug.title
-p
-  strong projectname:
-  = @bug.projectname
-p
-  strong Description:
-  = @bug.description
+div class="container-fluid"
+  h1 The Project Manager
 
-=> link_to 'Edit', edit_bug_path(@bug)
-'|
-=< link_to 'Back to bugs', bugs_path
-br
-= link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
+  div class="notice"
+    p#notice = notice
+
+  div class="show"
+    p
+      div class="labels"
+        strong Title:
+      = @bug.title
+    p
+      div class="labels"
+        strong projectname:
+      = @bug.projectname
+    p
+      div class="labels"
+        strong Description:
+      = @bug.description
+
+
+  div class="link"
+    => link_to 'Edit', edit_bug_path(@bug)
+    br
+    =< link_to 'Back to bugs', bugs_path
+    br
+    = link_to 'Back to projects', projects_path
+    br
+    br
+    = link_to 'Back to home', root_path

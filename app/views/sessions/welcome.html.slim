@@ -1,0 +1,18 @@
+h1 The Project Manager
+h2 Welcome to the project manager!
+
+p#notice = notice
+
+p
+  strong Name:
+  = @user.name
+p
+  strong Email:
+  = @user.email
+
+=> link_to 'Edit', edit_user_path(@user)
+'|
+=< link_to 'Back to users', users_path
+
+br
+= link_to 'Back to home', root_path

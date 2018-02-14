@@ -1,29 +1,33 @@
-h1 Listing bugs
+div class="container-fluid"
+  h1 The Project Manager
+  h2 Listing bugs
 
-table
-  thead
-    tr
-      th Title
-      th Project Name
-      th Description
-      th
-      th
-      th
-
-  tbody
-    - @bugs.each do |bug|
+  table
+    thead
       tr
-        td = bug.title
-        td = bug.projectname
-        td = bug.description
-        td = link_to 'Show', bug
-        td = link_to 'Edit', edit_bug_path(bug)
-        td = link_to 'Destroy', bug, data: { confirm: 'Are you sure?' }, method: :delete
+        th Title
+        th Project Name
+        th Description
+        th 👀
+        th 🖌
+        th 💣
 
-br
+    tbody
+      - @bugs.each do |bug|
+        tr
+          td = bug.title
+          td = bug.projectname
+          td = bug.description
+          td = link_to 'Show', bug
+          td = link_to 'Edit', edit_bug_path(bug)
+          td = link_to 'Destroy', bug, data: { confirm: 'Are you sure?' }, method: :delete
 
-= link_to 'Report New Bug', new_bug_path
-br
-= link_to 'Back to projects', projects_path
-br
-= link_to 'Back to home', root_path
+  br
+
+  div class="link"
+    = link_to 'Report new bug', new_bug_path
+    br
+    = link_to 'Back to projects', projects_path
+    br
+    br
+    = link_to 'Back to home', root_path
