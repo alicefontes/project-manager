@@ -28,7 +28,7 @@ class BugsController < ApplicationController
 
     respond_to do |format|
       if @bug.save
-        format.html { redirect_to @bug, notice: 'Bug was successfully created.' }
+        format.html { redirect_to @bug, notice: 'Bug was successfully reported.' }
         format.json { render :show, status: :created, location: @bug }
       else
         format.html { render :new }
